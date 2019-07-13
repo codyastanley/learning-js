@@ -2,6 +2,12 @@ body {
   margin: 5% 10%;
 }
 
+code {
+  margin-left: 20px;
+  font-size: .85em;
+  background-color: #f0f0f0;
+}
+
 #internalScriptContainer {
     width: 100%;
     margin-bottom: 5%;
@@ -12,15 +18,19 @@ body {
   float: left;
 }
 
+#internalScript p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 #internalScriptOutput {
-  width: 50%;
+  width: 46%;
   float: right;
+  padding-left: 4%;
   background-color: pink;
-  color: red;
 }
 
 #internalScriptOutput p {
-  margin-left: 20px;
   color:red;
 }
 
@@ -36,12 +46,12 @@ body {
 }
 
 #externalScriptOutput {
-  width: 50%;
+  width: 46%;
   float: right;
+  padding-left: 4%;
   background-color: grey;
 }
 
 #externalScriptOutput p {
-  margin-left: 20px;
   color:green;
 }

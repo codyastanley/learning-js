@@ -1,6 +1,7 @@
 function countByTens() {
   var num2 = 0;
-  while (num2 < 100) { //funtion loops until we reach 100
+   // The 'while' funtion loops until we reach 100.
+  while (num2 <= 200) {
 
     // Creates a <p> element and stores it in newP variable for use later.
     var newP = document.createElement('p');
@@ -12,13 +13,13 @@ function countByTens() {
     newP.appendChild(num2Text);
 
     // Locate where to add our new <p> elements.
-    var div = document.getElementById("externalScriptOutput");
+    var outputBox = document.getElementById("externalScriptOutput");
 
     // Adds the new <p> elements to the page within the parent element.
-    div.appendChild(newP);
+    outputBox.appendChild(newP);
 
     // Increment the number by 10
-    num2 += 10
+    num2 += 10;
 
     // The function loops back to the beginning.
   }

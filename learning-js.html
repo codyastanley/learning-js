@@ -4,32 +4,62 @@
     <title>Learning JavaScript</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="scripts.js"></script>
   </head>
   <body>
     <h1 id="title">Learning JavaScript</h1>
     <h2 id="mathematicalOperators">Mathematical Operators</h2>
     <div id="internalScriptContainer">
       <div id="internalScript">
-        <h4>This is from the script written inside the html.</h4>
+        <h4>This is a Script written inside the html.</h4>
+        <p>// Start at zero.</p>
+        <code>var num = 0;</code>
+        <p>// Loop until we reach exactly 100.</p>
+        <code>while (num <= 100) {</code>
+        <p>// Print the number to the page inside a new paragraph.</p>
+        <code>document.write('&lt;p&gt;' + num + '&lt;/p&gt;');</code>
+        <p>//Add 10 to the number.</p>
+        <code>num += 10</code>
       </div>
       <div id="internalScriptOutput">
+        <h4>This is the output of the Script</h4>
         <script type="text/javascript">
         var num = 0;
-        while (num < 100) {
-          num += 10
-          document.write('<p>' + num + '</p>');
+        while (num <= 100) { // loops until number = 100
+          document.write('<p>' + num + '</p>'); // write a new p directly to page.
+          num += 10 // Increment by 10
       }
         </script>
       </div>
     </div>
     <div id="externalScriptContainer">
       <div id="externalScript">
-        <h4>This one calls the function from the js file by clicking a button.</h4>
-        <button onClick="countByTens()">Click Me</button>
+        <h4>Here, a Function from the .js file is called by clicking a button.</h4>
+        <button onClick="countByTens()">onClick="countByTens()"</button>
+        <p>// This function will be executed on the "onClick" Event of the Button.</p>
+        <code>function countByTens() {</code>
+        <p>// Start at zero.</p>
+        <code>var num2 = 0;</code>
+        <p>// The 'while' funtion loops until we reach 100.</p>
+        <code>while (num2 <= 200) {</code>
+        <p>// Create a &lt;p&gt; element and store it in 'newP' variable.</p>
+        <code>var newP = document.createElement('p');</code>
+        <p>// Create a node of text, store it in a variable.</p>
+        <code>var num2Text = document.createTextNode(num2);</code>
+        <p>// Add the new text, using the variable, to the &lt;p&gt;.</p>
+        <code>newP.appendChild(num2Text);</code>
+        <p>// Locate where to add our new &lt;p&gt; elements and store in a variable.</p>
+        <code>var outputBox = document.getElementById("externalScriptOutput");</code>
+        <p>// Add the new &lt;p&gt; elements to the page within the parent element that we found earlier.<p>
+        <code>outputBox.appendChild(newP);</code>
+        <p>// Add 10 to the number.</p>
+        <code>num2 += 10;</code>
+        <p>// The function loops back to the beginning.</p>
+        <code>}</code>
       </div>
       <div id="externalScriptOutput">
+        <h4>This is the output of the Function.
         <!-- Script will output here. -->
       </div>
+      <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
