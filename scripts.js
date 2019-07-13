@@ -12,7 +12,7 @@ function countByTens() {
     newP.appendChild(num2Text);
 
     // Locate where to add our new <p> elements.
-    var div = document.getElementById("externalScript");
+    var div = document.getElementById("externalScriptOutput");
 
     // Adds the new <p> elements to the page within the parent element.
     div.appendChild(newP);

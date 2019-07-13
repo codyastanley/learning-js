@@ -2,10 +2,46 @@ body {
   margin: 5% 10%;
 }
 
-#internalScript p {
+#internalScriptContainer {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#internalScript {
+  width: 50%;
+  float: left;
+}
+
+#internalScriptOutput {
+  width: 50%;
+  float: right;
+  background-color: pink;
+  color: red;
+}
+
+#internalScriptOutput p {
+  margin-left: 20px;
   color:red;
 }
 
-#externalScript p {
+#externalScriptContainer {
+  width: 100%;
+  margin-bottom: 5%;
+  clear: both;
+}
+
+#externalScript {
+  width: 50%;
+  float: left;
+}
+
+#externalScriptOutput {
+  width: 50%;
+  float: right;
+  background-color: grey;
+}
+
+#externalScriptOutput p {
+  margin-left: 20px;
   color:green;
 }
