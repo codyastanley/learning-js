@@ -4,9 +4,24 @@
     <title>Learning JavaScript</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
   </head>
   <body>
     <h1 id="title">Learning JavaScript</h1>
-    <script type="text/javascript" src="scripts.js"></script>
+    <h2 id="mathematicalOperators">Mathematical Operators</h2>
+    <div id="internalScript">
+      <h4>This is from the script written inside the html.</h4>
+      <script type="text/javascript">
+      var num = 0;
+      while (num < 100) {
+        num += 10
+        document.write('<p>' + num + '</p>');
+    }
+      </script>
+    </div>
+      <div id="externalScript">
+        <h4>This one calls the function from the js file by clicking a button.</h4>
+        <button onClick="countByTens()">Click Me</button>
+      </div>
   </body>
 </html>
